@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OTP Verification</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        max-width: 500px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .otp {
+        display: inline-block;
+        background-color: #e6f0ff;
+        color: #003366;
+        font-size: 32px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        letter-spacing: 4px;
+        margin: 20px 0;
+        font-weight: bold;
+      }
+      .button {
+        background-color: #003366;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Email Verification</h2>
+      <p>Hi {{name}},</p>
+      <p>Your OTP code for verifying your email is:</p>
+      <div class="otp">{{otp}}</div>
+      <p>This OTP will expire in 10 minutes.</p>
+      <p>If you didn't request this, you can safely ignore this email.</p>
+      <p>Thank you!</p>
+    </div>
+  </body>
+</html>

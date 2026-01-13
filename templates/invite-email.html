@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 10px 0;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hi {{name}},</p>
+    <p>You have been invited to take the test: <strong>{{testName}}</strong></p>
+    <p>Access deadline: {{accessDeadline}}</p>
+    <p>
+      <a
+        href="{{startLink}}"
+        target="_blank"
+        style="
+          background: #2563eb;
+          color: #fff;
+          padding: 10px 16px;
+          border-radius: 8px;
+          text-decoration: none;
+        "
+      >
+        Start Test
+      </a>
+    </p>
+    <p>This link works once. Do not share.</p>
+    <p>Best of Luck!</p>
+  </body>
+</html>

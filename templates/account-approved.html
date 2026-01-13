@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      }
+      .button {
+        background-color: #4F46E5;
+        border: none;
+        color: white !important;
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 20px 0;
+        cursor: pointer;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+      .link {
+        color: #4F46E5;
+        text-decoration: underline;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: #4F46E5;">Hello {{name}},</h2>
+
+    <p>Your account has been <strong>approved</strong> by the admin. You can now log in and access your account.</p>
+
+    <p>
+      <a href="{{loginLink}}" class="button">Login Now</a>
+    </p>
+
+    <p>If the button doesn't work, copy and paste this link in your browser:</p>
+    <p><a href="{{loginLink}}" class="link">{{loginLink}}</a></p>
+
+    <br />
+    <p>Regards,<br />DotWork Team</p>
+  </body>
+</html>
