@@ -2,8 +2,6 @@
 node_modules/
 
 # env & secrets
-.env
-.env.*
 !.env.example   # keep a template in git
 
 # logs
@@ -27,5 +25,5 @@ coverage/
 # OS/editor junk
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
+config.bat
